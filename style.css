@@ -6,6 +6,7 @@
 
 body {
   font-family: "Epilogue", sans-serif;
+  border: 1px solid white;
   position: relative;
 }
 main {
@@ -16,6 +17,7 @@ main {
 
 /* -----NAVBAR----- */
 .navbar {
+  border: 1px solid white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,6 +40,7 @@ main {
 }
 /* -----HERO-SECTION-----*/
 .hero {
+  /* border: 1px solid white; */
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -53,6 +56,7 @@ main {
 }
 .hero-left {
   width: 60%;
+  /* border: 1px solid black; */
 }
 h1 {
   font-size: 4rem;
@@ -61,10 +65,10 @@ h1 {
   font-weight: 400;
 }
 .curve-upper-line-for-a-heading-word {
-  width: 25%;
+  width: 28%;
   position: absolute;
   top: 5%;
-  left: 32.5%;
+  left: 30%;
   font-weight: bold;
 }
 .hero p {
@@ -87,6 +91,7 @@ h1 {
 /* ---STATS --- */
 .stats-container,
 .stats {
+  /* border: 1px solid black; */
   /* padding: 1.5em; */
   display: flex;
   flex-direction: column;
@@ -163,6 +168,7 @@ footer {
   background-color: #f3ede7;
 }
 .footer {
+  /* border: 1px solid black; */
   max-width: 1024px;
   margin: 0 auto;
   padding: 0 4em;
@@ -207,8 +213,8 @@ footer {
   }
   .curve-upper-line-for-a-heading-word {
     top: -5%;
-    left: 38%;
-    width: 32.5%;
+    left: 37%;
+    width: 35%;
   }
   .jeremy-portrait {
     top: -25%;
@@ -236,6 +242,7 @@ footer {
     padding: 0;
   }
   .navbar {
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -255,6 +262,7 @@ footer {
   /* --- HERO-SECTION --- */
 
   .hero {
+    /* border: 1px solid black; */
     flex-direction: column;
     padding: 2em 1em;
     position: relative;
@@ -302,6 +310,7 @@ footer {
   /* ---STATS --- */
   .stats-container,
   .stats {
+    /* border: 1px solid black; */
     padding: 1.5em;
     display: flex;
     flex-direction: column;
