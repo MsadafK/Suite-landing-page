@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+  position: relative;
+}
+main {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 4em;
+}
+
+/* -----NAVBAR----- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+}
+.button {
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar-button {
+  border: 1px solid black;
+  font-size: 1rem;
+  color: #172339;
+  padding: 1em;
+}
+.navbar-button:hover {
+  background-color: #172339;
+  color: #fff;
+}
+/* -----HERO-SECTION-----*/
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  padding: 4em 0;
+  margin: 0 auto;
+}
+.hero-image {
+  position: absolute;
+  top: 0;
+  right: 25%;
+  z-index: -1;
+}
+.hero-left {
+  width: 60%;
+}
+h1 {
+  font-size: 4rem;
+}
+.normal-text-inside-heading {
+  font-weight: 400;
+}
+.curve-upper-line-for-a-heading-word {
+  width: 25%;
+  position: absolute;
+  top: 5%;
+  left: 32.5%;
+  font-weight: bold;
+}
+.hero p {
+  width: 70%;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  margin: 2em 0 4em;
+}
+.hero-button {
+  background-color: #172339;
+  color: #fff;
+  padding: 1em 2em;
+  font-size: 1.3rem;
+  transition: all 0.3s ease-in-out;
+}
+.hero-button:hover {
+  background-image: linear-gradient(to bottom right, #a060ff, #cb30e3, #ffa8fe);
+}
+
+/* ---STATS --- */
+.stats-container,
+.stats {
+  /* padding: 1.5em; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 5.5em;
+}
+.stats {
+  /* margin: 1em; */
+  text-align: left;
+  gap: 1em;
+}
+.number-of-stats {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #172339;
+}
+.about-of-stats {
+  letter-spacing: 0.1rem;
+}
+
+/* -----ABOUT-LOWER-CONTENT-DIV----- */
+
+.lower-about-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #172339;
+  color: #faf8f6;
+  text-align: center;
+  margin-top: 12em;
+  margin-bottom: 10em;
+  padding: 6em 2em;
+  gap: 2em;
+  position: relative;
+  border-radius: 15px;
+}
+.jeremy-portrait {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+}
+.about-details {
+  width: 45%;
+  text-align: left;
+}
+h2 {
+  font-size: 3rem;
+}
+.lower-about-section p {
+  color: #faf8f6;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  margin: 2em 0;
+}
+.role {
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  margin-top: 0.5em;
+}
+
+.instagram {
+  margin: 0 1em;
+}
+
+/* -----ABOUT----- */
+footer {
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 22em 0 4em;
+  background-color: #f3ede7;
+}
+.footer {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 4em;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon:hover {
+  fill: #49566d;
+}
+
+@media (max-width: 768px) {
+  main {
+    /* margin: 0 2em; */
+  }
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 4em 0;
+    gap: 8em;
+  }
+  .stats-container {
+    flex-direction: row;
+  }
+  .stats {
+    text-align: center;
+  }
+  .hero-left {
+    width: 75%;
+    align-self: flex-start;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  .hero-image {
+    top: -10%;
+    right: 0;
+    height: 85%;
+  }
+  .curve-upper-line-for-a-heading-word {
+    top: -5%;
+    left: 38%;
+    width: 32.5%;
+  }
+  .jeremy-portrait {
+    top: -25%;
+    left: 25%;
+    /* display: none; */
+  }
+  .lower-about-section {
+    flex-direction: column;
+    padding-top: 26em;
+    margin-top: 18em;
+    /* justify-content: center; */
+  }
+  .about-details {
+    width: 100%;
+    text-align: center;
+  }
+  .footer {
+    padding-top: 16em;
+  }
+}
+
+@media (max-width: 376px) {
+  /* --- NAVBAR --- */
+  main {
+    padding: 0;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+  }
+  .button {
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .navbar-button {
+    border: 1px solid black;
+    font-size: 1rem;
+    color: #172339;
+    padding: 1em;
+  }
+  /* --- HERO-SECTION --- */
+
+  .hero {
+    flex-direction: column;
+    padding: 2em 1em;
+    position: relative;
+    margin: 1em 0;
+    gap: 0;
+  }
+  h1 {
+    font-size: 2.25rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin: 1em 0 2.5em;
+    color: #59566d;
+  }
+  .hero-image {
+    content: url("assets/image-hero-landscape.png");
+    position: relative;
+    /* display: none; */
+  }
+  .hero-left {
+    width: 100%;
+    align-self: flex-start;
+  }
+  /* .normal-text-inside-heading {
+    font-weight: 400;
+  } */
+  .curve-upper-line-for-a-heading-word {
+    width: 40%;
+    position: absolute;
+    top: 0.5em;
+    left: 45%;
+    font-weight: bold;
+  }
+  /* .hero-button {
+    background-color: #172339;
+    color: #fff;
+    padding: 1em 2em;
+    font-size: 1.3rem;
+  } */
+  .hero-image {
+    width: 100%;
+    margin-top: 4em;
+  }
+  /* ---STATS --- */
+  .stats-container,
+  .stats {
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 1.5em; */
+  }
+  /* .stats {
+    margin: 1em;
+  } */
+  .number-of-stats {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #172339;
+  }
+  .about-of-stats {
+    letter-spacing: 0.1rem;
+  }
+  /* --- ABOUT --- */
+  .lower-about-section {
+    background-color: #172339;
+    color: #faf8f6;
+    text-align: center;
+    padding: 26em 1em 4em;
+    margin-top: 20em;
+    position: relative;
+    border-radius: 10px;
+  }
+  .jeremy-portrait {
+    position: absolute;
+    top: -30%;
+    left: 0;
+  }
+  .curved-pattern-two {
+    margin-bottom: 2em;
+  }
+  .lower-about-section p {
+    color: #faf8f6;
+    font-size: 1.2rem;
+    margin: 1em 0;
+  }
+  .role {
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    margin-top: 0.5em;
+  }
+  /* -- FOOTER -- */
+  footer {
+    z-index: 1;
+    padding: 2em 0;
+    text-align: center;
+    /* padding: 2em; */
+    background-color: #f3ede7;
+  }
+  .footer {
+    /* padding-top: 50em; */
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5em;
+  }
+  /* footer p {
+    margin: 2em 0;
+  } */
+  .instagram {
+    margin: 0 1em;
+  }
+}
